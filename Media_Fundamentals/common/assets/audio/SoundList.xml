@@ -1,0 +1,39 @@
+<sounds>
+
+	<stream>
+		<sources>
+			<url id="track01">https://streaming.live365.com/a06375?listenerId=Live365-Widget-AdBlock&aw_0_1st.playerid=Live365-Widget&aw_0_1st.skey=1637270507</url>
+			<url id="track02">https://lb0-stream.radiox981.ca/choi.mp3</url>
+			<url id="track03">http://cbcmp3.ic.llnwd.net/stream/cbcmp3_cbc_r1_tor</url>
+		</sources>
+	</stream>
+	
+	<effects>
+		<channel id="1">
+			<dsp id="6" name="FMOD_DSP_TYPE_ECHO" enabled="true" bypass="true">
+				<param id="0" name="FMOD_DSP_ECHO_DELAY" type="float">250.7</param>
+			</dsp>
+			<dsp id="10" name="FMOD_DSP_TYPE_NORMALIZE" enabled="true" bypass="true"/>
+			<dsp id="5" name="FMOD_DSP_TYPE_HIGHPASS" enabled="false" bypass="true"/>
+		</channel>
+		<channel id="2">
+			<dsp id="22" name="FMOD_DSP_TYPE_TREMOLO" enabled="true" bypass="true">
+				<param id="0" name="FMOD_DSP_TREMOLO_FREQUENCY" type="float">2.5</param>
+			</dsp>
+			<dsp id="21" name="FMOD_DSP_TYPE_DELAY" enabled="true" bypass="true"/>			
+			<dsp id="18" name="FMOD_DSP_TYPE_COMPRESSOR" enabled="true" bypass="true">
+				<param id="0" name="FMOD_DSP_COMPRESSOR_THRESHOLD" type="float">15.5</param>
+			</dsp>
+		</channel>
+		<channel id="3">
+			<dsp id="8" name="FMOD_DSP_TYPE_FLANGE" enabled="true" bypass="true">
+				<param id="0" name="FMOD_DSP_FLANGE_MIX" type="float">0.7</param>
+				<param id="1" name="FMOD_DSP_FLANGE_DEPTH" type="float">0.30</param>
+				<param id="2" name="FMOD_DSP_FLANGE_RATE" type="float">2.0</param>
+			</dsp>
+			<dsp id="14" name="FMOD_DSP_TYPE_CHORUS" enabled="true" bypass="true"/>
+			<dsp id="19" name="FMOD_DSP_TYPE_SFXREVERB" enabled="true" bypass="true"/>
+		</channel>
+	</effects>
+
+</sounds>
